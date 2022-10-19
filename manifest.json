@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Product Repairability Checker",
     "version": "1.0",
-    "description": "Checks the product you selected for its repairability score.",
+    "description": "Checks the product you selected for its IFIXIT repairability score.",
     "icons": {
         "16": "./images/icon16.png",
         "48": "./images/icon48.png",
@@ -25,5 +25,11 @@
     ],
     "host_permissions": [
         "https://www.ifixit.com/api/2.0/*"
-    ]
-  }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "o.fritz04@gmx.de",
+          "strict_min_version": "101"
+        }
+      }
+}
